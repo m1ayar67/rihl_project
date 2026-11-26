@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rihl/core/app_formatters.dart';
+import 'package:rihl/core/app_routes.dart';
 import 'package:rihl/core/constants.dart';
 import 'package:rihl/core/validators.dart';
 import 'package:rihl/l10n/app_strings.dart';
@@ -126,6 +127,15 @@ class _ComponentsPreviewScreenState extends State<ComponentsPreviewScreen> {
                       _message = null;
                     });
                   },
+                ),
+                const SizedBox(height: AppSizes.fieldSpacing),
+                CustomButton(
+                  label: strings.shipmentDetails,
+                  variant: CustomButtonVariant.secondary,
+                  icon: Icons.local_shipping_outlined,
+                  onPressed: () =>
+                      Navigator.of(context)
+                          .pushNamed(AppRoutes.shipmentDetails),
                 ),
                 if (_message != null) ...[
                   const SizedBox(height: AppSizes.fieldSpacing),

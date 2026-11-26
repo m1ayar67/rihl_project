@@ -32,4 +32,5 @@ const Map<String, String> stringsEn = {
   'datePast': 'The date cannot be in the past',
   'stepOf': 'Step {current} of {total}',
   'formValid': 'The form is valid',
+  'shipmentDetails': 'Shipment details',
 };
