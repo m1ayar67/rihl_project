@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rihl/dev/components_preview_screen.dart';
+import 'package:rihl/features/shipments/screens/shipment_details_screen.dart';
 
 /// Route names. Add the new screens here as they are built.
 ///
@@ -23,6 +24,7 @@ class AppRoutes {
   /// Until the real screens exist, the home route shows the components preview.
   static Map<String, WidgetBuilder> get routes => {
     home: (context) => const ComponentsPreviewScreen(),
-    // shipmentDetails: (context) => const ShipmentDetailsScreen(),
+    shipmentDetails: (context) => const ShipmentDetailsScreen(),
+    // shipmentReview: (context) => const ShipmentReviewScreen(),
   };
 }

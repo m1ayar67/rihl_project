@@ -10,12 +10,14 @@ class TemperatureDropdown extends StatelessWidget {
     required this.onChanged,
     this.value,
     this.validator,
+    this.autovalidateMode,
   });
 
   final String label;
   final String? value;
   final ValueChanged<String?> onChanged;
   final FormFieldValidator<String>? validator;
+  final AutovalidateMode? autovalidateMode;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class TemperatureDropdown extends StatelessWidget {
       value: value,
       onChanged: onChanged,
       validator: validator,
+      autovalidateMode: autovalidateMode,
       prefixIcon: Icons.thermostat_outlined,
     );
   }

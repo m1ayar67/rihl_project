@@ -32,4 +32,5 @@ const Map<String, String> stringsAr = {
   'datePast': 'لا يمكن أن يكون التاريخ في الماضي',
   'stepOf': 'الخطوة {current} من {total}',
   'formValid': 'النموذج صحيح',
+  'shipmentDetails': 'تفاصيل الشحنة',
 };

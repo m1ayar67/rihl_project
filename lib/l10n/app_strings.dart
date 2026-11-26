@@ -79,6 +79,7 @@ class AppStrings {
   String stepOf(int current, int total) =>
       _t('stepOf', {'current': current, 'total': total});
   String get formValid => _t('formValid');
+  String get shipmentDetails => _t('shipmentDetails');
 }
 
 class _AppStringsDelegate extends LocalizationsDelegate<AppStrings> {
