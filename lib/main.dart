@@ -29,8 +29,14 @@ class RihlApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           theme: AppTheme.light(locale),
-          initialRoute: AppRoutes.roleSelection,
+          initialRoute: AppRoutes.splash,
           routes: AppRoutes.routes,
+          onGenerateInitialRoutes: (initialRoute) => [
+            MaterialPageRoute(
+              settings: RouteSettings(name: initialRoute),
+              builder: AppRoutes.routes[initialRoute]!,
+            ),
+          ],
         );
       },
     );
