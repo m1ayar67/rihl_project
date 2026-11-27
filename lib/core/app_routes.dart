@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:rihl/dev/components_preview_screen.dart';
+import 'package:rihl/features/shipments/screens/shipment_cargo_screen.dart';
 import 'package:rihl/features/shipments/screens/shipment_details_screen.dart';
+import 'package:rihl/features/shipments/screens/shipment_review_screen.dart';
+import 'package:rihl/features/shipments/screens/shipment_success_screen.dart';
 import 'package:rihl/features/trips/screens/trip_details_screen.dart';
 import 'package:rihl/features/trips/screens/cargo_details_screen.dart';
 import 'package:rihl/features/trips/screens/trip_review_screen.dart';
@@ -16,12 +19,13 @@ class AppRoutes {
   static const String home = '/';
   static const String roleSelection = '/select-role';
 
-  // Shipment flow (Elaf, Mayar)
+  // Shipment flow (Elaf: UI. Mayar/Tala: saving it)
   static const String shipmentDetails = '/shipment/details';
+  static const String shipmentCargo = '/shipment/cargo';
   static const String shipmentReview = '/shipment/review';
   static const String shipmentSuccess = '/shipment/success';
 
-  // Trip flow (Layan, Tala)
+  // Trip flow (Layan: UI. Yara/Tala: saving it)
   static const String tripDetails = '/trip/details';
   static const String cargoDetails = '/trip/cargo';
   static const String tripReview = '/trip/review';
@@ -36,6 +40,8 @@ class AppRoutes {
     cargoDetails: (context) => const CargoDetailsScreen(),
     tripReview: (context) => const TripReviewScreen(),
     tripSuccess: (context) => const TripSuccessScreen(),
-    // shipmentReview: (context) => const ShipmentReviewScreen(),
+    shipmentCargo: (context) => const ShipmentCargoScreen(),
+    shipmentReview: (context) => const ShipmentReviewScreen(),
+    shipmentSuccess: (context) => const ShipmentSuccessScreen(),
   };
 }

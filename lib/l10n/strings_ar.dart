@@ -54,4 +54,9 @@ const Map<String, String> stringsAr = {
   'driverRole': 'السائق',
   'driverDescription': 'قريبًا',
   'backToHome': 'العودة إلى الرئيسية',
+  'reviewShipment': 'مراجعة الشحنة',
+  'submitShipment': 'إرسال الشحنة',
+  'shipmentSubmitted': 'تم إرسال الشحنة بنجاح',
+  'shipmentSubmittedMessage': 'تم استلام طلب الشحنة.',
+  'sendAnotherShipment': 'إرسال شحنة أخرى',
 };

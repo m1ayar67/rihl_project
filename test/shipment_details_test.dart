@@ -34,4 +34,17 @@ void main() {
     expect(same, details);
     expect(same.hashCode, details.hashCode);
   });
+
+  test('weightText drops a useless .0', () {
+    ShipmentDetails withWeight(double kg) => ShipmentDetails(
+      origin: 'jeddah',
+      destination: 'riyadh',
+      cargoType: 'food',
+      weightKg: kg,
+      temperature: 'chilled',
+      deliveryDate: DateTime(2026, 12, 3),
+    );
+    expect(withWeight(250).weightText, '250');
+    expect(withWeight(250.5).weightText, '250.5');
+  });
 }
