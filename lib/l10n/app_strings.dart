@@ -80,7 +80,7 @@ class AppStrings {
       _t('stepOf', {'current': current, 'total': total});
   String get formValid => _t('formValid');
   String get shipmentDetails => _t('shipmentDetails');
-    // Trip publishing
+  // Trip publishing
   String get tripDetails => _t('tripDetails');
   String get departureTime => _t('departureTime');
   String get cargoDetails => _t('cargoDetails');
@@ -93,7 +93,8 @@ class AppStrings {
   String get timePast => _t('timePast');
   String get tripPublishedMessage => _t('tripPublishedMessage');
   String get publishAnotherTrip => _t('publishAnotherTrip');
-    // User role selection
+  // User role selection
+  String get welcomeTo => _t('welcomeTo');
   String get selectRole => _t('selectRole');
   String get roleSubtitle => _t('roleSubtitle');
   String get shipperRole => _t('shipperRole');

@@ -158,7 +158,7 @@ void main() {
 
       await tester.tap(find.text('Back to home'));
       await tester.pumpAndSettle();
-      expect(find.text('Select your role'), findsWidgets);
+      expect(find.text('Choose your user type to continue'), findsWidgets);
     });
 
     testWidgets('Back on the review screen returns to step 2', (tester) async {
