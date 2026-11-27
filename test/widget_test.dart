@@ -14,7 +14,7 @@ void main() {
     await tester.pumpWidget(const RihlApp());
     await tester.pumpAndSettle();
 
-    expect(find.text('Select your role'), findsWidgets);
+    expect(find.text('Choose your user type to continue'), findsWidgets);
     expect(find.text('Shipper'), findsOneWidget);
     expect(find.text('Carrier'), findsOneWidget);
   });
@@ -26,7 +26,7 @@ void main() {
     await tester.tap(find.text('العربية'));
     await tester.pumpAndSettle();
 
-    expect(find.text('اختر نوع المستخدم'), findsWidgets);
+    expect(find.text('اختر نوع المستخدم للمتابعة'), findsWidgets);
     final direction = Directionality.of(tester.element(find.byType(Scaffold)));
     expect(direction, TextDirection.rtl);
   });
