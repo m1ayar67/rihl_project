@@ -29,7 +29,7 @@ class RihlApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           theme: AppTheme.light(locale),
-          initialRoute: AppRoutes.home,
+          initialRoute: AppRoutes.roleSelection,
           routes: AppRoutes.routes,
         );
       },

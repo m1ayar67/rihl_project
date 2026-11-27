@@ -80,6 +80,29 @@ class AppStrings {
       _t('stepOf', {'current': current, 'total': total});
   String get formValid => _t('formValid');
   String get shipmentDetails => _t('shipmentDetails');
+    // Trip publishing
+  String get tripDetails => _t('tripDetails');
+  String get departureTime => _t('departureTime');
+  String get cargoDetails => _t('cargoDetails');
+  String get supportedCargoType => _t('supportedCargoType');
+  String get supportedTemperature => _t('supportedTemperature');
+  String get reviewTrip => _t('reviewTrip');
+  String get publishTrip => _t('publishTrip');
+  String get chooseTime => _t('chooseTime');
+  String get tripPublished => _t('tripPublished');
+  String get timePast => _t('timePast');
+  String get tripPublishedMessage => _t('tripPublishedMessage');
+  String get publishAnotherTrip => _t('publishAnotherTrip');
+    // User role selection
+  String get selectRole => _t('selectRole');
+  String get roleSubtitle => _t('roleSubtitle');
+  String get shipperRole => _t('shipperRole');
+  String get shipperDescription => _t('shipperDescription');
+  String get carrierRole => _t('carrierRole');
+  String get carrierDescription => _t('carrierDescription');
+  String get driverRole => _t('driverRole');
+  String get driverDescription => _t('driverDescription');
+  String get backToHome => _t('backToHome');
 }
 
 class _AppStringsDelegate extends LocalizationsDelegate<AppStrings> {
