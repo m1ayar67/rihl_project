@@ -9,6 +9,7 @@ import 'package:rihl/features/trips/screens/cargo_details_screen.dart';
 import 'package:rihl/features/trips/screens/trip_review_screen.dart';
 import 'package:rihl/features/trips/screens/trip_success_screen.dart';
 import 'package:rihl/dev/role_selection_screen.dart';
+import 'package:rihl/splash_screen.dart';
 
 /// Route names. Add the new screens here as they are built.
 ///
@@ -17,6 +18,7 @@ class AppRoutes {
   AppRoutes._();
 
   static const String home = '/';
+  static const String splash = '/splash';
   static const String roleSelection = '/select-role';
 
   // Shipment flow (Elaf: UI. Mayar/Tala: saving it)
@@ -34,6 +36,7 @@ class AppRoutes {
   /// Until the real screens exist, the home route shows the components preview.
   static Map<String, WidgetBuilder> get routes => {
     home: (context) => const ComponentsPreviewScreen(),
+    splash: (context) => const SplashScreen(),
     roleSelection: (context) => const RoleSelectionScreen(),
     shipmentDetails: (context) => const ShipmentDetailsScreen(),
     tripDetails: (context) => const TripDetailsScreen(),
