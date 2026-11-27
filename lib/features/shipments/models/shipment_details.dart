@@ -27,6 +27,11 @@ class ShipmentDetails {
   final String temperature;
   final DateTime deliveryDate;
 
+  /// Weight for display: `250` instead of `250.0`.
+  String get weightText => weightKg == weightKg.truncateToDouble()
+      ? weightKg.toInt().toString()
+      : weightKg.toString();
+
   /// Keys follow the backend naming (snake_case). Date is `YYYY-MM-DD`.
   Map<String, dynamic> toJson() => {
     'origin': origin,

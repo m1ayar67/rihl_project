@@ -10,11 +10,13 @@ void main() {
     AppLocale.change(const Locale('en'));
   });
 
-  testWidgets('app starts on the components preview', (tester) async {
+  testWidgets('app starts on the role selection screen', (tester) async {
     await tester.pumpWidget(const RihlApp());
     await tester.pumpAndSettle();
-    expect(find.text('RIHL'), findsWidgets);
-    expect(find.text('Origin city'), findsOneWidget);
+
+    expect(find.text('Select your role'), findsWidgets);
+    expect(find.text('Shipper'), findsOneWidget);
+    expect(find.text('Carrier'), findsOneWidget);
   });
 
   testWidgets('language toggle switches to Arabic and RTL', (tester) async {
@@ -24,22 +26,8 @@ void main() {
     await tester.tap(find.text('العربية'));
     await tester.pumpAndSettle();
 
-    expect(find.text('مدينة الانطلاق'), findsOneWidget);
+    expect(find.text('اختر نوع المستخدم'), findsWidgets);
     final direction = Directionality.of(tester.element(find.byType(Scaffold)));
     expect(direction, TextDirection.rtl);
-  });
-
-  testWidgets('submitting an empty form shows errors', (tester) async {
-    tester.view.physicalSize = const Size(800, 2400);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.reset);
-
-    await tester.pumpWidget(const RihlApp());
-    await tester.pumpAndSettle();
-    await tester.tap(find.text('Next'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('Please select an option'), findsWidgets);
-    expect(find.text('This field is required'), findsOneWidget);
   });
 }

@@ -54,4 +54,9 @@ const Map<String, String> stringsEn = {
   'driverRole': 'Driver',
   'driverDescription': 'Coming soon',
   'backToHome': 'Back to home',
+  'reviewShipment': 'Review shipment',
+  'submitShipment': 'Submit shipment',
+  'shipmentSubmitted': 'Shipment submitted successfully',
+  'shipmentSubmittedMessage': 'Your shipment request has been received.',
+  'sendAnotherShipment': 'Send another shipment',
 };

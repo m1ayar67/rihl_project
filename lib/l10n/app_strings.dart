@@ -103,6 +103,11 @@ class AppStrings {
   String get driverRole => _t('driverRole');
   String get driverDescription => _t('driverDescription');
   String get backToHome => _t('backToHome');
+  String get reviewShipment => _t('reviewShipment');
+  String get submitShipment => _t('submitShipment');
+  String get shipmentSubmitted => _t('shipmentSubmitted');
+  String get shipmentSubmittedMessage => _t('shipmentSubmittedMessage');
+  String get sendAnotherShipment => _t('sendAnotherShipment');
 }
 
 class _AppStringsDelegate extends LocalizationsDelegate<AppStrings> {
